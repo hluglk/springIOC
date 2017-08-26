@@ -1,0 +1,20 @@
+[
+  {
+    "id": "user",
+    "class": "web.entity.User"
+  },
+  {
+    "id": "userDAO",
+    "class": "web.dao.impl.UserDAOImpl"
+  },
+  {
+    "id": "userService",
+    "class": "web.service.impl.UserServiceImpl",
+    "property":[
+      {
+        "name": "userDAO",
+        "ref": "userDAO"
+      }
+    ]
+  }
+]
